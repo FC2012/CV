@@ -17,15 +17,15 @@
 
 
     <div class="col" >
-        <div class="Vacancy"><h3>Front-end </h3></div>
-        <div class="Dev"> <h4>Developer</h4></div>
+        <div class="Vacancy" id="Vac"><h3>Front-end </h3></div>
+        <div class="Dev" id="Dev1"> <h4>Developer</h4></div>
         <div class="tel">Web</div>
         <div class="link">Developer</div>
     </div>
 
     <div class="col" >
         <div class="Surn">Tumilovich</div>
-        <div class="Name">Artem</div>
+        <div class="Name" id="Nam">Artem</div>
         <hr>
         <div class="Country">Republic of Belarus</div>
         <div class="Town">Minsk</div>
@@ -184,5 +184,40 @@
 <div class="footer" style="width:100%;">
     <div><p>LinkedIn : www.linkedin.com/in/artemTumilovichFront-end</p></div>
     </div>
+<script>
+
+    Dev1.addEventListener('click' , ones) ;
+
+    function ones () {
+        Dev1.style.color  = "red";
+        Vac.style.color  = "papayawhip";
+        Nam.style.color  = "papayawhip";
+        Vac.style.border = "none";
+
+
+    };
+
+    Vac.addEventListener('click' , twos) ;
+
+    function twos () {
+        Vac.style.color  = "red";
+        Dev1.style.color  = "papayawhip";
+        Nam.style.color  = "papayawhip";
+        Vac.style.borderBottom = "2px solid red";
+    };
+
+    Nam.addEventListener('click' , tres) ;
+
+    function tres () {
+        Nam.style.color = "red";
+        Dev1.style.color = "papayawhip";
+        Vac.style.color = "papayawhip";
+        Vac.style.border = "none";
+    };
+
+
+
+</script>
 </body>
+
 </html>
