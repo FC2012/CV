@@ -26,15 +26,15 @@
     <div class="col" >
         <div class="Surn">Tumilovich</div>
         <div class="Name" id="Nam">Artem</div>
-        <hr>
+        <hr style="height: 1px ; background-color: papayawhip">
         <div class="Country">Republic of Belarus</div>
         <div class="Town">Minsk</div>
     </div>
 
-    <div class="col">
+    <div class="col" id="COL3">
         <div class="col3">
         <div class="skype">SKYPE : ArtemT_1000</div>
-        <div class="email">Email : 556677at@gmail.com</div>
+        <div class="email"><a href="https://mail.google.com/mail/u/0/?tab=wm#inbox">email : 556677at@gmail.com</a></div>
         <div class="tel">Tel : +375 29 306 70 30</div>
 
         </div>
@@ -45,35 +45,35 @@
 
 <div class="context1">
     <div class="l">
-<div class="left">
+<div class="left" id="L">
 
 
 
 
                 <div class="multiform">
                     <h4>SKILLS </h4>
-                      <div class="mult">
-                            <div class="js"><h3>JavaScript</h3></div>
+                      <div class="mult" id="JS">
+                            <div class="js" ><h3>JavaScript</h3></div>
                       </div>
 
-                      <div class="mult">
+                      <div class="mult" id="CSS">
                           <div class="css"><h3>CSS / SASS </h3></div>
                       </div>
 
-                      <div class="mult">
+                      <div class="mult" id="HTML">
                            <div class="html"><h3>HTML5</h3></div>
                       </div>
 
-                      <div class="mult">
+                      <div class="mult" id="UNIX">
                            <div class="unix"><h3>Unix</h3></div>
                       </div>
 
-                      <div class="mult">
+                      <div class="mult" id="FR">
                            <div class="Frame"><h3>Frameworks</h3></div>
                       </div>
                  </div>
 
-                    <div class="skills">
+                    <div class="skills"  id="SKILLS">
                         <ul>
                             <li>Bootstrap</li>
                             <li>jQuery</li>
@@ -82,6 +82,8 @@
                             <li>npm / Gulp</li>
                         </ul>
                     </div>
+
+
 
                      <div class="edu">
                          <h3>Education</h3>
@@ -186,34 +188,37 @@
     </div>
 <script>
 
-    Dev1.addEventListener('click' , ones) ;
+    Dev1.addEventListener('mouseover' , ones) ;
 
     function ones () {
-        Dev1.style.color  = "red";
-        Vac.style.color  = "papayawhip";
-        Nam.style.color  = "papayawhip";
-        Vac.style.border = "none";
-
-
+        Dev1.style.fontSize  = "18px";
+        Vac.style.fontSize  = "10px";
     };
 
-    Vac.addEventListener('click' , twos) ;
+    Vac.addEventListener('mouseover' , twos) ;
 
     function twos () {
-        Vac.style.color  = "red";
-        Dev1.style.color  = "papayawhip";
-        Nam.style.color  = "papayawhip";
-        Vac.style.borderBottom = "2px solid red";
-    };
+        Vac.style.fontSize  = "18px";
+        Dev1.style.fontSize  = "12px";
+    }
 
-    Nam.addEventListener('click' , tres) ;
+    var set =  document.getElementById("SKILLS");
+function cycleOn () {
+    set.style.color = "#EE7942";}
 
-    function tres () {
-        Nam.style.color = "red";
-        Dev1.style.color = "papayawhip";
-        Vac.style.color = "papayawhip";
-        Vac.style.border = "none";
-    };
+    function cycleOff (){
+    set.style.color = "papayawhip";}
+
+ setInterval(cycleOn, 500);
+    setInterval(cycleOff, 1000);
+
+
+
+
+
+
+
+
 
 
 

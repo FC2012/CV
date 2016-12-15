@@ -4,7 +4,8 @@
   position: absolute;
   left: 0;
   top: 0;
-  background-color: #363636; }
+  background-color: #363636;
+  box-shadow: 10px 0 15px #EE7942; }
 
 body {
   font-family: "DejaVu Sans Mono", fantasy;
@@ -28,7 +29,8 @@ ul {
   margin: 0;
   padding: 0;
   border-radius: 10px 10px 10px 0;
-  color: papayawhip; }
+  color: papayawhip;
+  box-shadow: 0 10px 15px #EE7942; }
 
 .col {
   width: 30%;
@@ -68,11 +70,6 @@ ul {
 .col3 {
   text-align: right; }
 
-.left {
-  width: 100%;
-  height: 100%;
-  color: papayawhip; }
-
 .mult {
   width: 85%;
   border-radius: 15px;
@@ -80,7 +77,8 @@ ul {
   margin: 5%;
   height: 40px;
   color: papayawhip;
-  border: 5px solid #EE7942; }
+  border: 5px solid #EE7942;
+  box-shadow: 2px 2px 5px white; }
 
 .js {
   width: 66%;
@@ -144,6 +142,8 @@ ul {
     float: left; }
 
 .left {
+  width: 100%;
+  color: papayawhip;
   background: #363636;
   border: #363636;
   height: 100%; }
@@ -158,10 +158,7 @@ ul {
   margin-left: 30%;
   width: 75%;
   height: 100%;
-  padding-left: 10px;
-  padding-bottom: 0;
-  padding-right: 10px;
-  padding-top: 0; }
+  padding: 0 15px 0 10px; }
 
 .skills {
   width: 100%;
@@ -193,14 +190,16 @@ ul {
   float: left;
   width: 60%; }
 
-.footer div {
-  width: 99%;
-  text-align: right;
-  background: #363636;
-  color: papayawhip;
-  border-radius: 0 10px 10px 10px; }
-  .footer div p {
-    padding-right: 100px; }
+.footer {
+  box-shadow: -25px -10px 25px #EE7942; }
+  .footer div {
+    width: 99%;
+    text-align: right;
+    background: #363636;
+    color: papayawhip;
+    border-radius: 0 10px 10px 10px; }
+    .footer div p {
+      padding-right: 100px; }
 
 .lang {
   width: 100%;
@@ -231,7 +230,21 @@ ul {
   border-top-right-radius: 50px; }
 
 hr {
-  background-color: papayawhip;
-  color: papayawhip; }
+  background-color: #EE7942;
+  box-shadow: 0 0 3px #363636;
+  height: 3px; }
+
+.mult:hover {
+  -webkit-transform: translateX(8%);
+  -moz-transform: translateX(8%);
+  -ms-transform: translateX(8%);
+  -o-transform: translateX(8%);
+  transform: translateX(8%);
+  border: 5px solid papayawhip;
+  transition-timing-function: ease-out;
+  transition-duration: 1s; }
+
+#SKILLS {
+  letter-spacing: 5px; }
 
 /*# sourceMappingURL=style.css.map */
