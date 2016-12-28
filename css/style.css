@@ -68,7 +68,9 @@ ul {
   text-align: right; }
 
 .col3 {
-  text-align: right; }
+  text-align: right;
+  height: inherit;
+  margin: 1px; }
 
 .mult {
   width: 85%;
@@ -246,5 +248,35 @@ hr {
 
 #SKILLS {
   letter-spacing: 5px; }
+
+.barier {
+  margin-right: 10%;
+  width: 40px;
+  display: inline-block; }
+
+.nameSkype {
+  width: 40%;
+  display: inline-block;
+  padding: 6px;
+  overflow: hidden; }
+
+img {
+  width: 25px;
+  height: 25px; }
+
+a:link {
+  color: papayawhip;
+  text-decoration: none; }
+
+a:hover {
+  color: orange;
+  text-decoration: none; }
+
+a:active {
+  color: lightpink;
+  text-decoration: none; }
+
+.barier:hover img {
+  visibility: hidden; }
 
 /*# sourceMappingURL=style.css.map */

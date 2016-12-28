@@ -33,15 +33,93 @@
 
     <div class="col" id="COL3">
         <div class="col3">
-        <div class="skype">SKYPE : ArtemT_1000</div>
-        <div class="email"><a href="https://mail.google.com/mail/u/0/?tab=wm#inbox">email : 556677at@gmail.com</a></div>
-        <div class="tel">Tel : +375 29 306 70 30</div>
+
+        <div class="containerAdress">
+            <div class="nameSkype" >ArtemT_1000</div>
+            <div class="barier" >
+                <div class="image">
+                <img src="img/skype.png" alt="skypeLog" ></div>
+                </div>
+
+        </div>
+
+
+
+
+
+            <div class="containerAdress">
+                <div class="nameSkype">
+                    <a href="mailto:556677at@gmail.com">556677at@gmail.com</a></div>
+                <div class="barier" > <img src="img/email.png" height="25px" width="25px" alt="mailLog"></div>
+
+            </div>
+
+
+            <div class="containerAdress">
+                <div class="nameSkype">+375 29 306 70 30</div>
+                <div class="barier" > <img src="img/tel.png" height="25px" width="25px" alt="telLog"></div>
+
+            </div>
+
+
 
         </div>
         </div>
 
 </div>
+<script>
+    var hoverToChange = document.body.getElementsByClassName('nameSkype');
+    var hoverBarier = document.body.getElementsByClassName("barier");
 
+
+
+
+    hoverBarier[0].addEventListener("mouseover", changeColor);
+    hoverBarier[1].addEventListener("mouseover", changeColor1);
+    hoverBarier[2].addEventListener("mouseover", changeColor2);
+
+    var a = 0 ;
+    var b = 1 ;
+    var c = 2 ;
+
+
+    function iffunc () {
+
+
+        if (a == 0) {
+            b = 1;
+            c = 2;
+        } else if (a == 1) {
+            b = 0;
+            c = 2;
+        } else  {
+            b = 0;
+            c = 1;
+        }
+
+
+
+    }
+
+    function changeColor () {
+        iffunc () ;
+        hoverToChange[a].style.color = "blue";
+        hoverToChange[b].style.color = "papayawhip";
+        hoverToChange[c].style.color = "papayawhip";
+
+
+
+    }
+
+    function changeColor1 () {
+        hoverToChange[1].style.color = "blue";
+    }
+
+    function changeColor2 () {
+        hoverToChange[2].style.color = "blue";
+    }
+
+</script>
 
 <div class="context1">
     <div class="l">
@@ -211,16 +289,6 @@ function cycleOn () {
 
  setInterval(cycleOn, 500);
     setInterval(cycleOff, 1000);
-
-
-
-
-
-
-
-
-
-
 
 </script>
 </body>
