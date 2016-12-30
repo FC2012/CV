@@ -65,29 +65,22 @@ overflow: hidden;
 
 
 .col {
-  .Surn {
+  .Surnname {
     font-weight: bold;
-padding-left:5px;
-    font-size: 14px;
+    padding-top:5px;
+    font-size: 24px;
     text-align: center;
   };
-  .Name{
-    font-weight: bold;
-    padding-left:10px;
-    font-size: larger;
-    text-align: center;
-  };
-
   .Town{
     padding-left:55px;
     text-align: right;
-    font-size: 10px;
+    font-size: 14px;
     padding-right: 2%;
   };
   .Country{
     padding-right: 2%;
     padding-left:55px;
-    font-size: 12px;
+    font-size: 18px;
     text-align: right;
   };
 }
@@ -96,10 +89,29 @@ padding-left:5px;
   text-align: right;
   height:inherit;
   margin: 1px;
+}
 
+#COL{
+  width:28%;
+    color: rgb(100,100,300);
+}
+#COL1 {
+  width: 43%;
+
+  border: 1px solid ghostwhite;
+  border-top:none;
+  border-radius: 0 0 30px 30px;
+  margin: 0 0 10px -10px;
+  box-shadow: 3px  3px 15px $cl;
+  background-color: papayawhip;
+  color:black;
 }
 
 
+#COL2 {
+  width: 25%;
+  float:right;
+}
 
 
 
@@ -364,13 +376,12 @@ a:link {
   text-decoration: none;
 }
 
-a:hover {
-  color: orange;
-  text-decoration: none;
-}
-
 a:active {
   color: lightpink;
+  text-decoration: none;
+}
+a:hover {
+  color: brown;
   text-decoration: none;
 }
 
@@ -378,9 +389,30 @@ a:active {
 }
 
 
-.barier:hover img {
-  visibility: hidden;
+.containerAdress:hover  {
+  background: papayawhip;
+  border-radius: 10px;
+  border: 1px solid aliceblue;
+  color:black;
+
+  -webkit-transform: translateX(5%);
+  -moz-transform: translateX(5%);
+  -ms-transform: translateX(5%);
+  -o-transform: translateX(5%);
+  transform: translateX(5%);
+
+  transition-timing-function: ease-out;
+  transition-duration: 1s;
+
+
+
+  a {
+    color: black;
+  };
 }
+
+
+
 
 
 

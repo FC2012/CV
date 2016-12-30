@@ -46,31 +46,44 @@ ul {
 .col .Dev {
   text-align: center; }
 
-.col .Surn {
+.col .Surnname {
   font-weight: bold;
-  padding-left: 5px;
-  font-size: 14px;
-  text-align: center; }
-.col .Name {
-  font-weight: bold;
-  padding-left: 10px;
-  font-size: larger;
+  padding-top: 5px;
+  font-size: 24px;
   text-align: center; }
 .col .Town {
   padding-left: 55px;
   text-align: right;
-  font-size: 10px;
+  font-size: 14px;
   padding-right: 2%; }
 .col .Country {
   padding-right: 2%;
   padding-left: 55px;
-  font-size: 12px;
+  font-size: 18px;
   text-align: right; }
 
 .col3 {
   text-align: right;
   height: inherit;
   margin: 1px; }
+
+#COL {
+  width: 28%;
+  color: #6464ff; }
+
+#COL1 {
+  width: 43%;
+  border: 1px solid ghostwhite;
+  border-top: none;
+  border-radius: 0 0 30px 30px;
+  margin: 0 0 10px -10px;
+  box-shadow: 3px 3px 15px #EE7942;
+  background-color: papayawhip;
+  color: black; }
+
+#COL2 {
+  width: 25%;
+  float: right; }
 
 .mult {
   width: 85%;
@@ -268,15 +281,27 @@ a:link {
   color: papayawhip;
   text-decoration: none; }
 
-a:hover {
-  color: orange;
-  text-decoration: none; }
-
 a:active {
   color: lightpink;
   text-decoration: none; }
 
-.barier:hover img {
-  visibility: hidden; }
+a:hover {
+  color: brown;
+  text-decoration: none; }
+
+.containerAdress:hover {
+  background: papayawhip;
+  border-radius: 10px;
+  border: 1px solid aliceblue;
+  color: black;
+  -webkit-transform: translateX(5%);
+  -moz-transform: translateX(5%);
+  -ms-transform: translateX(5%);
+  -o-transform: translateX(5%);
+  transform: translateX(5%);
+  transition-timing-function: ease-out;
+  transition-duration: 1s; }
+  .containerAdress:hover a {
+    color: black; }
 
 /*# sourceMappingURL=style.css.map */

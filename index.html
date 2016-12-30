@@ -16,25 +16,24 @@
 <div class="header" >
 
 
-    <div class="col" >
+    <div class="col" id="COL" >
         <div class="Vacancy" id="Vac"><h3>Front-end </h3></div>
         <div class="Dev" id="Dev1"> <h4>Developer</h4></div>
         <div class="tel">Web</div>
         <div class="link">Developer</div>
     </div>
 
-    <div class="col" >
-        <div class="Surn">Tumilovich</div>
-        <div class="Name" id="Nam">Artem</div>
+    <div class="col" id="COL1">
+        <div class="Surnname" id="SURNNAME">Tumilovich Artem</div>
         <hr style="height: 1px ; background-color: papayawhip">
         <div class="Country">Republic of Belarus</div>
         <div class="Town">Minsk</div>
     </div>
 
-    <div class="col" id="COL3">
+    <div class="col" id="COL2">
         <div class="col3">
 
-        <div class="containerAdress">
+        <div class="containerAdress" >
             <div class="nameSkype" >ArtemT_1000</div>
             <div class="barier" >
                 <div class="image">
@@ -42,9 +41,6 @@
                 </div>
 
         </div>
-
-
-
 
 
             <div class="containerAdress">
@@ -64,62 +60,10 @@
 
 
         </div>
-        </div>
+    </div>
+
 
 </div>
-<script>
-    var hoverToChange = document.body.getElementsByClassName('nameSkype');
-    var hoverBarier = document.body.getElementsByClassName("barier");
-
-
-
-
-    hoverBarier[0].addEventListener("mouseover", changeColor);
-    hoverBarier[1].addEventListener("mouseover", changeColor1);
-    hoverBarier[2].addEventListener("mouseover", changeColor2);
-
-    var a = 0 ;
-    var b = 1 ;
-    var c = 2 ;
-
-
-    function iffunc () {
-
-
-        if (a == 0) {
-            b = 1;
-            c = 2;
-        } else if (a == 1) {
-            b = 0;
-            c = 2;
-        } else  {
-            b = 0;
-            c = 1;
-        }
-
-
-
-    }
-
-    function changeColor () {
-        iffunc () ;
-        hoverToChange[a].style.color = "blue";
-        hoverToChange[b].style.color = "papayawhip";
-        hoverToChange[c].style.color = "papayawhip";
-
-
-
-    }
-
-    function changeColor1 () {
-        hoverToChange[1].style.color = "blue";
-    }
-
-    function changeColor2 () {
-        hoverToChange[2].style.color = "blue";
-    }
-
-</script>
 
 <div class="context1">
     <div class="l">
@@ -289,6 +233,58 @@ function cycleOn () {
 
  setInterval(cycleOn, 500);
     setInterval(cycleOff, 1000);
+
+    // --- changing color function
+
+    var col1 = document.getElementById("COL1");
+
+    col1.addEventListener("click" ,changeColor);
+
+    function colorDone () {
+        col1.style.background = COLORS['col'+ count ];
+        col1.style.color = COLORS['color'+ count];
+    }
+    var count = 0 ;
+
+    var COLORS = {
+        col1: "rgb(300,10,1)",
+        col2: "rgb(300,150,1)",
+        col3: "rgb(400,10,1)",
+        col4: "rgb(500,10,1)",
+        color1: "rgb(100,300,100)",
+        color2: "rgb(100,200,300)",
+        color3: "rgb(200,50,300)",
+        color4: "rgb(300,300,300)"
+    };
+
+    function changeColor () {
+
+        (function counter () {
+              count = count + 1 ;
+              return count;
+          }());
+
+        if (count == 1 ) {
+
+            colorDone ()
+        } else if (count == 2 ) {
+            colorDone ()
+        } else if (count == 3 ) {
+            colorDone ()
+        }   else if (count == 4 ) {
+            colorDone ()
+        } else {
+            col1.style.background = "papayawhip";
+            col1.style.color = "black";
+            count = 0 ;
+        }
+
+
+
+
+
+    }
+
 
 </script>
 </body>
